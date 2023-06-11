@@ -11,3 +11,9 @@
     gap: 0;
   }
 }
+
+@media (max-width: 430px) {
+  .profile {
+    padding-top: 42px;
+  }
+}
