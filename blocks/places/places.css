@@ -1,0 +1,10 @@
+.places {
+  padding-top: 51px;
+  width: 100%;
+}
+
+@media (max-width: 430px) {
+  .places {
+    padding-top: 36px;
+  }
+}

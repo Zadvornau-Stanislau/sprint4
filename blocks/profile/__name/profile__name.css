@@ -1,0 +1,27 @@
+.profile__name {
+  display: flex;
+  gap: 19px;
+  margin: 0;
+  padding-right: 8px;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+@media (max-width: 740px) {
+  .profile__name {
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    margin-right: -28px;
+  }
+}
+
+@media (max-width: 430px) {
+  .profile__name {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto Russia</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+
+<body class="body">
+  <div class="page" lang="ru">
+    <h1 class="page__title_hide">
+      Mesto Russia
+    </h1>
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="logo">
+    </header>
+
+    <main class="content">
+      <section class="profile">
+        <div class="profile__avatar">
+          <img src="./images/profile-image.jpg" alt="profile-image" class="profile__image">
+        </div>
+
+        <div class="profile__info">
+          <h2 class="profile__name">
+            Жак-Ив Кусто
+            <img src="./images/Edit-Button.svg" alt="Edit-Button" class="profile__edit-button">
+          </h2>
+          <p class="profile__discription">
+            Исследователь океана
+          </p>
+        </div>
+
+        <button class="add-button">
+          <img src="./images/add-button.svg" alt="add-button" class="add-button__text">
+        </button>
+      </section>
+
+      <section class="popup">
+        <div class="popup__container">
+          <img src="./images/Close-popup.png" alt="Close-popup" class="popup__close-button">
+          <h2 class="popup__title">
+            Редактировать профиль
+          </h2>
+          <form action="#" class="popup__form">
+            <input type="text" name="lastname" placeholder="Введите Вашу фамилию" value="Жак-Ив Кусто" class="popup__input">
+            <input type="text" name="discription" placeholder="Введите описание" value="Исследователь океана" class="popup__input">
+            <button class="popup__button">
+              Сохранить
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="places">
+        <ul class="places__list">
+          <li class="place">
+            <img src="./images/Karachayevsk.png" alt="Karachayevsk" class="place__photo">
+            <div class="place__discription">
+              <h2 class="place__title">
+                Карачаевск
+              </h2>
+              <span class="place__like"></span>
+            </div>
+          </li>
+          <li class="place">
+            <img src="./images/Elbrus.png" alt="Elbrus" class="place__photo">
+            <div class="place__discription">
+              <h2 class="place__title">
+                Гора Эльбрус
+              </h2>
+              <span class="place__like"></span>
+            </div>
+          </li>
+          <li class="place">
+            <img src="./images/Dombay.png" alt="Dombay" class="place__photo">
+            <div class="place__discription">
+              <h2 class="place__title">
+                Домбай
+              </h2>
+              <span class="place__like"></span>
+            </div>
+          </li>
+          <li class="place">
+            <img src="./images/Elbrus.png" alt="Elbrus" class="place__photo">
+            <div class="place__discription">
+              <h2 class="place__title">
+                Гора Эльбрус
+              </h2>
+              <span class="place__like"></span>
+            </div>
+          </li>
+          <li class="place">
+            <img src="./images/Dombay.png" alt="Dombay" class="place__photo">
+            <div class="place__discription">
+              <h2 class="place__title">
+                Домбай
+              </h2>
+              <span class="place__like"></span>
+            </div>
+          </li>
+          <li class="place">
+            <img src="./images/Karachayevsk.png" alt="Karachayevsk" class="place__photo">
+            <div class="place__discription">
+              <h2 class="place__title">
+                Карачаево-Черкессия
+              </h2>
+              <span class="place__like"></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        © 2020 Mesto Russia
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
