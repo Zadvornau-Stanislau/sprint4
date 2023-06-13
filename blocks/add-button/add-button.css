@@ -1,4 +1,7 @@
 .add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #FFFFFF;
   background-repeat: 2px;
   padding: 12px 62px;

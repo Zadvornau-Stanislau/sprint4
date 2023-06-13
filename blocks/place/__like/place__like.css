@@ -2,17 +2,19 @@
   display: inline-block;
   width: 22px;
   height: 19px;
+  border: none;
   align-self: center;
   cursor: pointer;
-  background-image: url("../../../images/like.jpg");
+  background-color: #fff;
+  background-image: url("../../../images/like.svg");
   background-repeat: no-repeat;
   transition: background-image 0.3s;
 }
 
 .place__like:hover {
-  background-image: url("../../../images/like-hover.png");
+  background-image: url("../../../images/like-hover.svg");
 }
 
 .place__like:active {
-  background-image: url("../../../images/like-active.png");
+  background-image: url("../../../images/like-active.svg");
 }

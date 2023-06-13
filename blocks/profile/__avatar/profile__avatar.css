@@ -2,6 +2,9 @@
   position: relative;
   width: 120px;
   height: 120px;
-  overflow: hidden;
   border-radius: 50%;
+  background-image: url('../../../images/profile-image.jpg');
+  background-size: 168.75px 127.5px;
+  background-position: -23px -3.75px;
+  flex-shrink: 0;
 }

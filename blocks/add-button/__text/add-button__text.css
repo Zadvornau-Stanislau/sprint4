@@ -1,0 +1,23 @@
+.add-button__text {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.add-button__text::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 3px;
+  background-color: #fff;
+  translate: 0 9.5px;
+}
+
+.add-button__text::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 22px;
+  background-color: #fff;
+  translate: 9.5px -3px;
+}
