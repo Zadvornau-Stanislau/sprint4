@@ -21,3 +21,28 @@
   background-color: #fff;
   translate: 9.5px -3px;
 }
+
+@media (max-width: 720px) {
+  .add-button__text{
+    width: 16px;
+    height: 16px;
+  }
+
+  .add-button__text::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    translate: 1px 7px;
+  }
+
+  .add-button__text::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 16px;
+    background-color: #fff;
+    translate: 8px -2px;
+  }
+}
