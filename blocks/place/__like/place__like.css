@@ -8,11 +8,11 @@
   background-color: #fff;
   background-image: url("../../../images/like.svg");
   background-repeat: no-repeat;
-  transition: background-image 0.3s;
+  transition: background-image 0.3s, opacity 0.3s;
 }
 
 .place__like:hover {
-  background-image: url("../../../images/like-hover.svg");
+  opacity: 0.7;
 }
 
 .place__like:active {

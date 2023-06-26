@@ -30,13 +30,22 @@
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__button/popup__button.css);
 
+@import url(../blocks/imgpopup/imgpopup.css);
+@import url(../blocks/imgpopup/_opened/imgpopup_opened.css);
+@import url(../blocks/imgpopup/__close-button/imgpopup__close-button.css);
+@import url(../blocks/imgpopup/__figure/imgpopup__figure.css);
+@import url(../blocks/imgpopup/__img/imgpopup__img.css);
+@import url(../blocks/imgpopup/__figcaption/imgpopup__figcaption.css);
+
 @import url(../blocks/places/places.css);
 @import url(../blocks/places/__list/places__list.css);
 
 @import url(../blocks/place/place.css);
 @import url(../blocks/place/__photo/place__photo.css);
+@import url(../blocks/place/__trash/place__trash.css);
 @import url(../blocks/place/__title/place__title.css);
 @import url(../blocks/place/__like/place__like.css);
+@import url(../blocks/place/__like/_like/place__like_like.css);
 @import url(../blocks/place/__discription/place__discription.css);
 
 @import url(../blocks/footer/footer.css);

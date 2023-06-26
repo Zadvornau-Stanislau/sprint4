@@ -19,88 +19,22 @@
         <div class="profile__avatar"></div>
 
         <div class="profile__info">
-          <h1 class="profile__name">
+          <h1 class="profile__name" id="profile__name">
             Жак-Ив Кусто
           </h1>
-          <button type="button" class="profile__edit-button"></button>
-          <p class="profile__discription">
+          <button type="button" class="profile__edit-button" id="profile__edit-button"></button>
+          <p class="profile__discription" id="profile__discription">
             Исследователь океана
           </p>
         </div>
 
-        <button type="button" class="add-button">
+        <button type="button" class="add-button" id="add-button">
           <span class="add-button__text"></span>
         </button>
       </section>
 
       <section class="places">
-        <ul class="places__list">
-          <li class="place">
-            <article>
-              <img src="./images/Karachayevsk.png" alt="Карачаевск" class="place__photo">
-              <div class="place__discription">
-                <h2 class="place__title">
-                  Карачаевск
-                </h2>
-                <button type="submit" class="place__like"></button>
-              </div>
-            </article>
-          </li>
-          <li class="place">
-            <article>
-              <img src="./images/Elbrus.png" alt="Гора Эльбрус" class="place__photo">
-              <div class="place__discription">
-                <h2 class="place__title">
-                  Гора Эльбрус
-                </h2>
-                <button type="submit" class="place__like"></button>
-              </div>
-            </article>
-          </li>
-          <li class="place">
-            <article>
-              <img src="./images/Dombay.png" alt="Домбай" class="place__photo">
-              <div class="place__discription">
-                <h2 class="place__title">
-                  Домбай
-                </h2>
-                <button type="submit" class="place__like"></button>
-              </div>
-            </article>
-          </li>
-          <li class="place">
-            <article>
-              <img src="./images/Elbrus.png" alt="Гора Эльбрус" class="place__photo">
-              <div class="place__discription">
-                <h2 class="place__title">
-                  Гора Эльбрус
-                </h2>
-                <button type="submit" class="place__like"></button>
-              </div>
-            </article>
-          </li>
-          <li class="place">
-            <article>
-              <img src="./images/Dombay.png" alt="Домбай" class="place__photo">
-              <div class="place__discription">
-                <h2 class="place__title">
-                  Домбай
-                </h2>
-                <button type="submit" class="place__like"></button>
-              </div>
-            </article>
-          </li>
-          <li class="place">
-            <article>
-              <img src="./images/Karachayevsk.png" alt="Карачаево-Черкессия" class="place__photo">
-              <div class="place__discription">
-                <h2 class="place__title">
-                  Карачаево-Черкессия
-                </h2>
-                <button type="submit" class="place__like"></button>
-              </div>
-            </article>
-          </li>
+        <ul class="places__list" id="places__list">
         </ul>
       </section>
     </main>
@@ -111,25 +45,31 @@
       </p>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__container">
-        <button type="submit" class="popup__close-button"></button>
-        <h2 class="popup__title">
-          Редактировать профиль
-        </h2>
+        <button class="popup__close-button" id="popup__close-button"></button>
+        <h2 class="popup__title" id="popup__title"></h2>
         <form action="#" class="popup__form">
-          <input type="text" name="lastname" placeholder="Введите Вашу фамилию" value="Жак-Ив Кусто"
-            class="popup__input">
-          <input type="text" name="discription" placeholder="Введите описание" value="Исследователь океана"
-            class="popup__input">
-          <button class="popup__button">
+          <input type="text" name="lastname" id="lastname" placeholder="" value="" class="popup__input" required>
+          <input type="text" name="discription" id="discription" placeholder="" value="" class="popup__input" required>
+          <button type="submit" class="popup__button" id="popup__button">
             Сохранить
           </button>
         </form>
       </div>
     </div>
+
+    <div class="imgpopup" id="imgpopup">
+      <figure class="imgpopup__figure">
+        <button class="imgpopup__close-button" id="imgpopup__close-button"></button>
+        <img src="./images/Dombay.png" class="imgpopup__img" id="imgpopup__img">
+        <figcaption class="imgpopup__figcaption" id="imgpopup__figcaption">
+          Dombay
+        </figcaption>
+      </figure>
+    </div>
   </div>
 </body>
-
+<script src="/scripts/script.js"></script>
 
 </html>
