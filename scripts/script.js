@@ -53,7 +53,7 @@ function OpenPopUpProfile() {
   PopUpTitle.textContent = "Редактировать профиль";
 
   window.addEventListener('keypress', function (event) {
-    if (event.key === 'Enter' && PopUp.classList.contains('popup_opened')) {
+    if (event.key === 'Enter' && PopUp.classList.contains('popup_opened') && PopUpTitle.textContent == "Редактировать профиль") {
       event.preventDefault();
       SavePopUpProfile(event);
     }
