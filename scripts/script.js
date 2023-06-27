@@ -96,7 +96,7 @@ function ClosePopUpPlaceAdd() {
 function SavePopUpPlaceAdd(event) {
   event.preventDefault()
   PopUp.classList.remove('popup_opened');
-  PlacesList.insertAdjacentHTML('beforeend', CreateCard(PopUpFirstInput.value, PopUpSecondInput.value))
+  PlacesList.insertAdjacentHTML('afterbegin', CreateCard(PopUpFirstInput.value, PopUpSecondInput.value))
 }
 
 function LikeCard(target) {
