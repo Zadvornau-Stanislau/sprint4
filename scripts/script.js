@@ -52,12 +52,6 @@ function OpenPopUpProfile() {
   PopUpSecondInput.placeholder = "Введите описание";
   PopUpTitle.textContent = "Редактировать профиль";
 
-  window.addEventListener('keypress', function (event) {
-    if (event.key === 'Enter' && PopUp.classList.contains('popup_opened') && PopUpTitle.textContent == "Редактировать профиль") {
-      event.preventDefault();
-      SavePopUpProfile(event);
-    }
-  });
   PopUpCloseButton.addEventListener('click', ClosePopUpProfile);
   PopUpSaveButton.addEventListener('click', SavePopUpProfile);
   PopUpCloseButton.removeEventListener('click', ClosePopUpPlaceAdd);
@@ -141,3 +135,16 @@ for (let Place of PlacesToCreate) {
 ProfileEditButton.addEventListener('click', OpenPopUpProfile);
 PlaceAddButton.addEventListener('click', OpenPopUpPlaceAdd);
 ImgPopUpCloseButton.addEventListener('click', CloseImgPopUp)
+window.addEventListener('keypress', function (event) {
+  if (event.key === 'Enter' && PopUp.classList.contains('popup_opened') && PopUpTitle.textContent == "Редактировать профиль") {
+    event.preventDefault();
+    SavePopUpProfile(event);
+  }
+});
+
+window.addEventListener('keypress', function (event) {
+  if (event.key === 'Enter' && PopUp.classList.contains('popup_opened') && PopUpTitle.textContent == "Новое место") {
+    event.preventDefault();
+    SavePopUpPlaceAdd(event);
+  }
+});
